@@ -37,6 +37,16 @@ def update(todo_id):
         # print(f"After update - ID: {todo.id}, Title: {todo.title}, Complete: {todo.complete}")
     return redirect(url_for('index'))
 
+@app.route('/delete/<int:todo_id>')
+def delete(todo_id):
+    todo = Todo.query.get(todo_id)
+    if todo:
+        # print(f"Before update - ID: {todo.id}, Title: {todo.title}, Complete: {todo.complete}")
+        db.session.delete(todo)
+        db.session.commit()
+        # print(f"After update - ID: {todo.id}, Title: {todo.title}, Complete: {todo.complete}")
+    return redirect(url_for('index'))
+
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
