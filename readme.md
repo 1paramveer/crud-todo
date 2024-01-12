@@ -10,7 +10,7 @@ It can perform CRUD operations including creating tasks, updating their status (
    `git clone git@github.com:1paramveer/flask-todo-crud.git`
 2. Open the directory in PowerShell\
    `cd flask-crud-todo`
-3. Actiate Virtual Environment\
+3. Actiate Virtual Environment
    ```python
    .\venv\Scripts\activate # For Windows
    source venv/bin/activate # For Linux/macOS
