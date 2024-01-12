@@ -8,10 +8,14 @@ It can perform CRUD operations including creating tasks, updating their status (
 
 1. Clone the repo
    `git clone git@github.com:1paramveer/flask-todo-crud.git`
-2. Open the directory in powershell
+2. Open the directory in PowerShell
    `cd flask-crud-todo`
 3. Actiate Virtual Environment
-   `.\venv\Scripts\activate` # For Windows
-   `source venv/bin/activate` # For Linux/macOS
-4. Run the app
+   ```python
+   .\venv\Scripts\activate # For Windows
+   source venv/bin/activate # For Linux/macOS
+   ```
+4. Run the server
    `python app.py`
+5. The app can be accessed by browser
+   `http://127.0.0.1:5000/`
